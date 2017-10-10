@@ -1,4 +1,4 @@
-#! C:/ruby/bin/ruby -w
+#! env ruby -w
 #
 # + The original program is by Jack Hauber, and the source is
 #   "Basic Computer Games." Used with permission of David Ahl;
@@ -6,7 +6,7 @@
 # + This exercise was inspired by Alan Hensel's use of Amazing
 #   as a refactoring challenge.
 # + This transliteration to Ruby was created by Kevin Rutherford,
-#   kevin@rutherford-software.co.uk
+#   kevin@rutherford-software.com
 #
 
 class Amazing

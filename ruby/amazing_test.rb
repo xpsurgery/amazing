@@ -1,4 +1,4 @@
-require 'amazing'
+require './amazing'
 require 'test/unit'
 
 class TestAmazing < Test::Unit::TestCase
