@@ -35,6 +35,9 @@ def goto(lineno):
 
 def doit(horizontal, vertical):
     global target
+    global result
+    target = 0
+    result = ''
 
     clear
     write('Amazing - Copyright by Creative Computing, Morristown, NJ')
