@@ -1,6 +1,6 @@
 RUBY := ruby
 
-.PHONY: test run
+.PHONY: test run clean
 
 test:
 	$(RUBY) ./amazing_test.rb

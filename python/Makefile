@@ -1,6 +1,6 @@
 PYTHON := python
 
-.PHONY: test run
+.PHONY: test run clean
 
 test:
 	$(PYTHON) -m unittest amazing_test
