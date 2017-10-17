@@ -1,11 +1,13 @@
+PYTHON := python
+
 .PHONY: test run
 
 test:
-	python -m unittest amazing_test
+	$(PYTHON) -m unittest amazing_test
 
 run:
-	python amazing.py
+	$(PYTHON) amazing.py
 
 clean:
-	rm *.pyc
+	$(RM) *.pyc
 

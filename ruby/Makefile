@@ -1,8 +1,12 @@
+RUBY := ruby
+
 .PHONY: test run
 
 test:
-	ruby ./amazing_test.rb
+	$(RUBY) ./amazing_test.rb
 
 run:
-	ruby ./runner.rb
+	$(RUBY) ./runner.rb
+
+clean:
 

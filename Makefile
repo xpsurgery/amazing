@@ -1,10 +1,14 @@
-.PHONY: test run
+LANGUAGES = java ruby python
 
-test:
-	cd ruby && $(MAKE) test
-	cd java && $(MAKE) test
+.PHONY: build clean test $(LANGUAGES)
 
-run:
-	cd ruby && $(MAKE) run
-	cd java && $(MAKE) run
+default: test
+
+test: $(LANGUAGES)
+
+$(LANGUAGES):
+	$(MAKE) -C $@ test
+
+clean:
+	-for d in $(LANGUAGES); do $(MAKE) -C $$d clean; done
 
