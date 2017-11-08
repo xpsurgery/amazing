@@ -3,7 +3,6 @@ NODE_MODULES := node_modules
 .PHONY: test run clean clobber
 
 test: $(NODE_MODULES)
-	env | sort
 	npm run test
 
 run: test

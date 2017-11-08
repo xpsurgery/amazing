@@ -9,6 +9,25 @@ variety of different languages.
 4. Think about your refactoring strategy. Do you use particular moves at certain times in the process?  Looking back over the whole process, could you describe a refactoring plan for this code to someone else?
 5. Can you describe the maze-building algorithm used? Can you refactor the code so that some part of it expresses this algorithm? Could you use most of this code to implement one or more alternative algorithms without too much rewriting?
 
+## Makefiles
+
+Several `make` targets are provided in the top level and also in each language directory:
+
+`make test`\
+Run the tests for all language variants.  Build whatever is necessary first.
+
+`make run`\
+Run all language variants. By default these generate mazes with 10 rows and 10 columns; this can be overridden by passing envinoment variables as follows:
+```
+cols=4 rows=5 make run
+```
+
+`make clean`\
+Remove intermediate compilation targets, if any.
+
+`make clobber`\
+Remove all built artefacts, if any.
+
 ## Credits
 
 * The original program is by Jack Hauber, and the source is "Basic Computer Games." Used with permission of [David Ahl](www.SwapMeetDave.com)

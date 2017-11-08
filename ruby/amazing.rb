@@ -600,3 +600,10 @@ class Amazing
     end
 end
 
+if __FILE__ == $0
+  rows = ENV['rows'] ? ENV['rows'].to_i : 10
+  cols = ENV['cols'] ? ENV['cols'].to_i : 10
+  Amazing.doit(cols, rows)
+  puts $result
+end
+

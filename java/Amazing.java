@@ -6,7 +6,11 @@ public class Amazing {
     static StringBuffer result = new StringBuffer();
 
     public static void main(String[] args) {
-        doit(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+        String colsArg = System.getenv("cols");
+        int cols = colsArg == null ? 10 : Integer.parseInt(colsArg);
+        String rowsArg = System.getenv("rows");
+        int rows = rowsArg == null ? 10 : Integer.parseInt(rowsArg);
+        doit(cols, rows);
         System.out.println(result);
     }
 

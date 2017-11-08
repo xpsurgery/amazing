@@ -5,7 +5,7 @@ PYTHON := python
 test:
 	$(PYTHON) -m unittest amazing_test
 
-run:
+run: test
 	$(PYTHON) amazing.py
 
 clean:

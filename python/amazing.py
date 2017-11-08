@@ -1,5 +1,6 @@
 #! env python
 
+import os
 import random
 
 target = 0                      # where GOTO goes
@@ -534,6 +535,6 @@ def doit(horizontal, vertical):
         println()
 
 if __name__ == '__main__':
-    doit(10, 10)
+    doit(int(os.getenv('cols', 10)), int(os.getenv('rows', 10)))
     print result
 

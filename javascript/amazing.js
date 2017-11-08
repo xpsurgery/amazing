@@ -650,7 +650,9 @@ function doit(horizontal, vertical) {
 }
 
 if (require.main === module) {
-  doit(10, 10)
+  cols = process.env.cols || 10
+  rows = process.env.rows || 10
+  doit(cols, rows)
   console.log(result)
 }
 

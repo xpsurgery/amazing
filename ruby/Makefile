@@ -5,8 +5,8 @@ RUBY := ruby
 test:
 	$(RUBY) ./amazing_test.rb
 
-run:
-	$(RUBY) ./runner.rb
+run: test
+	$(RUBY) ./amazing.rb
 
 clean:
 
