@@ -1,13 +1,4 @@
 #! env ruby -w
-#
-# + The original program is by Jack Hauber, and the source is
-#   "Basic Computer Games." Used with permission of David Ahl;
-#   see www.SwapMeetDave.com.
-# + This exercise was inspired by Alan Hensel's use of Amazing
-#   as a refactoring challenge.
-# + This transliteration to Ruby was created by Kevin Rutherford,
-#   kevin@rutherford-software.com
-#
 
 class Amazing
     $target = 0                         # where GOTO goes

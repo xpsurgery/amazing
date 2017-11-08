@@ -1,6 +1,6 @@
-LANGUAGES = java ruby python
+LANGUAGES := $(shell ls -d [a-z]* )
 
-.PHONY: build clean test $(LANGUAGES)
+.PHONY: clean test $(LANGUAGES)
 
 default: test
 
