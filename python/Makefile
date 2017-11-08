@@ -1,6 +1,6 @@
 PYTHON := python
 
-.PHONY: test run clean
+.PHONY: test run clean clobber
 
 test:
 	$(PYTHON) -m unittest amazing_test
@@ -10,4 +10,6 @@ run:
 
 clean:
 	$(RM) *.pyc
+
+clobber: clean
 

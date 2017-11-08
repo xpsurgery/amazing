@@ -599,3 +599,4 @@ class Amazing
         }
     end
 end
+

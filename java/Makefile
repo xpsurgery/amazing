@@ -8,7 +8,7 @@ CLASSPATH := -classpath .:junit-4.12.jar:hamcrest-core-1.3.jar
 .java.class:
 	$(JAVAC) $(JFLAGS) $(CLASSPATH) $*.java
 
-.PHONY: test run clean
+.PHONY: test run clean clobber
 
 test: Amazing.class TestAmazing.class
 	$(JAVA) $(CLASSPATH) org.junit.runner.JUnitCore TestAmazing
@@ -18,4 +18,6 @@ run: test
 
 clean:
 	$(RM) *.class
+
+clobber: clean
 

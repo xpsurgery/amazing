@@ -2,5 +2,9 @@
   "dependencies": {
     "mocha": "4.0.1",
     "seedrandom": "2.4.3"
+  },
+  "scripts": {
+    "test": "mocha *-test.js"
   }
 }
+

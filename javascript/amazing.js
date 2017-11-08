@@ -650,11 +650,9 @@ function doit(horizontal, vertical) {
 }
 
 if (require.main === module) {
-  //doit(process.argv[1], process.argv[2])
   doit(10, 10)
   console.log(result)
 }
 
 module.exports.doit = doit
-module.exports.result = result
 
