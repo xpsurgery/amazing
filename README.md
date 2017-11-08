@@ -13,20 +13,17 @@ variety of different languages.
 
 Several `make` targets are provided in the top level and also in each language directory:
 
-`make test`\
-Run the tests for all language variants.  Build whatever is necessary first.
-
-`make run`\
-Run all language variants. By default these generate mazes with 10 rows and 10 columns; this can be overridden by passing envinoment variables as follows:
-```
-cols=4 rows=5 make run
-```
-
-`make clean`\
-Remove intermediate compilation targets, if any.
-
-`make clobber`\
-Remove all built artefacts, if any.
+* `make test`\
+  Run the tests for all language variants.  Build whatever is necessary first.
+* `make run`\
+  Run all language variants. By default these generate mazes with 10 rows and 10 columns; this can be overridden by passing envinoment variables as follows:
+  ```
+  cols=4 rows=5 make run
+  ```
+* `make clean`\
+  Remove intermediate compilation targets, if any.
+* `make clobber`\
+  Remove all built artefacts, if any.
 
 ## Credits
 
