@@ -51,12 +51,12 @@ function doit(horizontal, vertical) {
   // 130:170
   for (var i = 1; i <= h; i++) {
     if (i == x)
-      print(":  ")
+      print("+  ")
     else
-      print(":--")
+      print("+--")
   }
   // 180
-  print(":")
+  print("+")
   println()
 
   // 190
@@ -622,13 +622,13 @@ function doit(horizontal, vertical) {
 
   // 1200:
   for (var j = 1; j <= v; j++) {
-    print("I")    // 1210
+    print("|")    // 1210
 
     for (var i = 1; i <= h; i++) {
       if (vArray[i][j] >= 2)
         print("   ")  // 1240
       else
-        print("  I")  // 1260
+        print("  |")  // 1260
     }
 
     print(" ")   // 1280
@@ -636,14 +636,14 @@ function doit(horizontal, vertical) {
 
     for (var i = 1; i <= h; i++) {
       if (vArray[i][j] == 0)
-        print(":--")   // 1300, 1340
+        print("+--")   // 1300, 1340
       else if (vArray[i][j] == 2)
-        print(":--")  // 1310, 1340
+        print("+--")  // 1310, 1340
       else
-        print(":  ") // 1320
+        print("+  ") // 1320
     }
 
-    print(":")  // 1360
+    print("+")  // 1360
     println()
   }
   return result

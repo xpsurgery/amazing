@@ -50,12 +50,12 @@ def doit(horizontal, vertical):
     # 130:170
     for i in range(1, h+1):
         if i == x:
-            write(':  ')
+            write('+  ')
         else:
-            write(':--')
+            write('+--')
 
     # 180
-    write(':')
+    write('+')
     println()
 
     # 190
@@ -516,22 +516,22 @@ def doit(horizontal, vertical):
             target = -1
 
     for j in range(1, v+1):
-        write('I')
+        write('|')
         for i in range(1, h+1):
             if vArray[i][j] >= 2:
                 write('   ')
             else:
-                write('  I')
+                write('  |')
         write(' ')
         println()
         for i in range(1, h+1):
             if vArray[i][j] == 0:
-                write(':--')
+                write('+--')
             elif vArray[i][j] == 2:
-                write(':--')
+                write('+--')
             else:
-                write(':  ')
-        write(':')
+                write('+  ')
+        write('+')
         println()
 
 if __name__ == '__main__':

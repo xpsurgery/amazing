@@ -43,13 +43,13 @@ class Amazing
         # 130:170
         (1..h).each { |i|
             if i == x
-                Amazing.print(":  ")
+                Amazing.print("+  ")
             else
-                Amazing.print(":--")
+                Amazing.print("+--")
             end
         }
         # 180
-        Amazing.print(":")
+        Amazing.print("+")
         Amazing.println
 
         # 190
@@ -571,13 +571,13 @@ class Amazing
 
         # 1200
         (1..v).each { |j|
-            Amazing.print("I")        # 1210
+            Amazing.print("|")        # 1210
 
             (1..h).each { |i|
                 if vArray[i][j] >= 2
                     Amazing.print("   ")  # 1240
                 else
-                    Amazing.print("  I")  # 1260
+                    Amazing.print("  |")  # 1260
                 end
             }
 
@@ -586,15 +586,15 @@ class Amazing
 
             (1..h).each { |i|
                 if vArray[i][j] == 0
-                    Amazing.print(":--")   # 1300, 1340
+                    Amazing.print("+--")   # 1300, 1340
                 elsif vArray[i][j] == 2
-                    Amazing.print(":--")  # 1310, 1340
+                    Amazing.print("+--")  # 1310, 1340
                 else
-                    Amazing.print(":  ") # 1320
+                    Amazing.print("+  ") # 1320
                 end
             }
 
-            Amazing.print(":")    # 1360
+            Amazing.print("+")    # 1360
             Amazing.println
         }
     end
