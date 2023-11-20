@@ -28,6 +28,6 @@ Several `make` targets are provided in the top level and also in each language d
 ## Credits
 
 * The original program is by Jack Hauber, and the source is "Basic Computer Games." Used with permission of [David Ahl](www.SwapMeetDave.com)
-* This exercise was inspired by Alan Hensel's use of [Amazing as a refactoring challenge](http://www.mindspring.com/~alanh/refactoring/challenge.html)
+* This exercise was inspired by Alan Hensel's use of [Amazing as a refactoring challenge](https://web.archive.org/web/20080513210558/http://www.mindspring.com/~alanh/refactoring/challenge.html)
 * The transliteration to Java is based on one created by [Bill Wake](http://xp123.com).
 
